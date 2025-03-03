@@ -114,20 +114,20 @@ path = "exercises/normal/solution5/src/tests.rs"
 
 [[test]]
 name = "hard1"
-path = "exercises/hard/solution1/src/tests.rs"
+path = "exercises/hard/solutiont1/src/tests.rs"
 
 [[test]]
 name = "hard2"
-path = "exercises/hard/solution2/src/tests.rs"
+path = "exercises/hard/solutiont2/src/tests.rs"
 
 [[test]]
 name = "hard3"
-path = "exercises/hard/solution3/src/tests.rs"
+path = "exercises/hard/solutiont3/src/tests.rs"
 
 [[test]]
 name = "hard4"
-path = "exercises/hard/solution4/src/tests.rs"
+path = "exercises/hard/solutiont4/src/tests.rs"
 
 [[test]]
 name = "hard5"
-path = "exercises/hard/solution5/src/tests.rs"
+path = "exercises/hard/solutiont5/src/tests.rs"
