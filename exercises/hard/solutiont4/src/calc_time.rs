@@ -38,7 +38,6 @@ impl Date {
         } else {
             week = (self.days() + FIRST_DAY - 1) / 7;
         }
-        println!("{week}");
         // curr_thursday_days
         let days_of_curr_thursday = week * 7 - 3;
 
