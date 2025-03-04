@@ -1,7 +1,7 @@
 pub fn goldbach_conjecture() -> String {
     let mut primes = vec![];
-    const N:usize = 100000;
-    let mut is_prime = [false;N];
+    const N: usize = 100000;
+    let mut is_prime = [false; N];
     let mut ans = vec![];
 
     // prime
@@ -10,9 +10,9 @@ pub fn goldbach_conjecture() -> String {
     for i in 2..N {
         is_prime[i] = true
     }
-    for i in 2..N.isqrt()+1 {
+    for i in 2..N.isqrt() + 1 {
         if is_prime[i] {
-            for j in (i*i..N).step_by(i){
+            for j in (i * i..N).step_by(i) {
                 is_prime[j] = false
             }
         }
@@ -24,12 +24,12 @@ pub fn goldbach_conjecture() -> String {
         }
     }
 
-    let mut holds = [false;N];
+    let mut holds = [false; N];
     holds[0] = true;
     holds[1] = true;
     for prime in primes {
         holds[prime] = true;
-        for i in 1..((N-prime)/2).isqrt() + 1 {
+        for i in 1..((N - prime) / 2).isqrt() + 1 {
             let num = prime + 2 * i.pow(2);
             if num < N {
                 holds[num] = true;
@@ -43,6 +43,5 @@ pub fn goldbach_conjecture() -> String {
         }
     }
 
-    // println!("{ans:?}");
     ans[..2].join(",")
 }

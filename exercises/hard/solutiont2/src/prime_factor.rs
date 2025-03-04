@@ -26,7 +26,9 @@ fn is_prime(n: u128) -> bool {
     }
     let bases: [u128; 12] = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37];
     'witness: for &a in &bases {
-        if a % n == 0 { continue; }
+        if a % n == 0 {
+            continue;
+        }
         let mut x = mod_exp(a, d, n);
         if x == 1 || x == n - 1 {
             continue;
