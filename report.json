@@ -127,13 +127,13 @@
     },
     {
       "name": "solutiont1",
-      "result": false,
-      "score": 0
+      "result": true,
+      "score": 10
     },
     {
       "name": "solutiont2",
-      "result": false,
-      "score": 0
+      "result": true,
+      "score": 10
     },
     {
       "name": "solutiont3",
@@ -142,20 +142,20 @@
     },
     {
       "name": "solutiont4",
-      "result": false,
-      "score": 0
+      "result": true,
+      "score": 10
     },
     {
       "name": "solutiont5",
-      "result": false,
-      "score": 0
+      "result": true,
+      "score": 10
     }
   ],
   "statistics": {
     "total_exercises": 30,
-    "total_successes": 25,
-    "total_failures": 5,
-    "total_score": 50,
-    "total_time": 17
+    "total_successes": 29,
+    "total_failures": 1,
+    "total_score": 90,
+    "total_time": 16
   }
 }

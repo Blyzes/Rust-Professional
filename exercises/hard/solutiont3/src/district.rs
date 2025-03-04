@@ -9,7 +9,7 @@ use std::{
 type CityMap = BTreeMap<String, BTreeMap<String, Vec<String>>>;
 
 pub fn count_provinces() -> String {
-    let file = File::open("exercises/hard/solutiont3/district.json").unwrap();
+    let file = File::open("district.json").unwrap();
     let reader = BufReader::new(file);
     let datas: CityMap = serde_json::from_reader(reader).unwrap();
     let mut res: Vec<usize> = vec![];
